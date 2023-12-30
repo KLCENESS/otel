@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15A75299-9140-44AF-B077-4CB91BA5B6C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>otel</RootNamespace>
+    <AssemblyName>otel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanListe.Designer.cs">
+      <DependentUpon>CalisanListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HatirlatmaListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HatirlatmaListe.Designer.cs">
+      <DependentUpon>HatirlatmaListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasrafListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasrafListe.Designer.cs">
+      <DependentUpon>MasrafListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriListe.Designer.cs">
+      <DependentUpon>MusteriListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oda.Designer.cs">
+      <DependentUpon>Oda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaListe.Designer.cs">
+      <DependentUpon>OdaListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaTipi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaTipi.Designer.cs">
+      <DependentUpon>OdaTipi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaTipiListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaTipiListe.Designer.cs">
+      <DependentUpon>OdaTipiListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeListe.Designer.cs">
+      <DependentUpon>OdemeListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonListe.Designer.cs">
+      <DependentUpon>RezervasyonListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisListe.Designer.cs">
+      <DependentUpon>SiparisListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunListe.Designer.cs">
+      <DependentUpon>UrunListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veritabani.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanListe.resx">
+      <DependentUpon>CalisanListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HatirlatmaListe.resx">
+      <DependentUpon>HatirlatmaListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasrafListe.resx">
+      <DependentUpon>MasrafListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriListe.resx">
+      <DependentUpon>MusteriListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oda.resx">
+      <DependentUpon>Oda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaListe.resx">
+      <DependentUpon>OdaListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaTipi.resx">
+      <DependentUpon>OdaTipi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaTipiListe.resx">
+      <DependentUpon>OdaTipiListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeListe.resx">
+      <DependentUpon>OdemeListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonListe.resx">
+      <DependentUpon>RezervasyonListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisListe.resx">
+      <DependentUpon>SiparisListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunListe.resx">
+      <DependentUpon>UrunListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
